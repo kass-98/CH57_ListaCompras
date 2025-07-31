@@ -17,9 +17,12 @@ function validarCantidad(){
     if(Number(txtNumber.value)<=0){
         return false;
     }
-    
     return true;
 }
+//3.
+function getPrecio(){
+    return Math.round(Math.random() * 10000) /100;
+} //get precio
 
 btnAgregar.addEventListener("click", function(event){
     event.preventDefault();
